@@ -38,7 +38,7 @@ const quickLinks01=[
   },
   {
     path:'/',
-    display:"Blog"
+    display:"Services"
   }
 
 
