@@ -3,6 +3,7 @@ import { formateDate } from '../../utils/formateDate'
 
 const Appointments = ({appointments}) => {
   return (
+    
    <table className='w-full text-left text-sm text-gray-500'>
 
       <thead className='text-xs text-gray-700 uppercase bg-gray-50'>

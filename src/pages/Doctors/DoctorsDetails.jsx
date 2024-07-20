@@ -51,10 +51,10 @@ const DoctorsDetails = () => {
              <div className="flex  items-center  gap-[6px]">
               <span className="flex  items-center gap-[6px] text-[14px] leading-5 lg:text-[16px]
               lg:leading-7 font-semibold text-headingColor">
-                <img src={starIcon} alt="" /> {averageRating}
+                <img src={starIcon} alt="" /> ({Math.round(averageRating)})
               </span>
               <span className=' text-[14px] leading-5 lg:text-[16px]
-              lg:leading-7 font-[400] text-textColor'>{totalRating}</span>
+              lg:leading-7 font-[400] text-textColor'>({Math.round(totalRating)})</span>
              </div>
                <p className='text_para text-[14px] leading-5 md:text-[15px] lg:max-w-[390px]'>
                 {bio}

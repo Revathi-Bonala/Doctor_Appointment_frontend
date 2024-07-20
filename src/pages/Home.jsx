@@ -30,10 +30,13 @@ const Home = () => {
         <div className='lg:w-[570px]   '>
           <h1 className='text-[36px] leading-[46px] text-headingColor font-[700]  md:text-[60px]
           md:leading-[70px]'> Compassionate care,exceptional results</h1>
-                 <p className='text_para'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius ex nam molestias
-                   debitis quidem? Eveniet nam saepeipsam unde 
-                   accusamus natus molestias tenetu et asperiores delectus laboriosam?</p> 
-                   <button className='btn'>Request an Appointment</button>
+                 <p className='text_para'>At Medicare, we are committed 
+                 to providing compassionate and high-quality healthcare services. 
+                 Our team of experienced doctors and medical professionals is dedicated 
+                 to ensuring your well-being and delivering exceptional results.</p> 
+                 <Link to="/doctors">
+                  <button className='btn'>Request an Appointment</button>
+                </Link>
           </div>
           {/* ===========hero counter========== */}
           <div className='mt-[30px] lg:mt-[70px] flex flex-col lg:flex-row lg:items-center gap-5

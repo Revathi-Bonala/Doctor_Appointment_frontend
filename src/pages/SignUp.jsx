@@ -49,8 +49,9 @@ const SignUp = () => {
       if(!res.ok){
         throw new Error(message)
       }
+     
+      toast.success(message);
       setLoading(false);
-      toast.success(message)
       navigate('/login');
 
       
@@ -159,7 +160,7 @@ const SignUp = () => {
            </div>
            <p className="mt-5 text-textColor text-center" >
             Already have an account?
-            <Link to='/loginr'
+            <Link to='/login'
              className='text-primaryColor font-medium mt-1'>Login</Link>
             
            </p>

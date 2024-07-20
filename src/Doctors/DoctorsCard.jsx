@@ -6,13 +6,13 @@ import { BsArrowRight } from 'react-icons/bs';
 const DoctorsCard = ({doctor}) => {
   const {
     name,
-    avgRating,
+    averageRating,
     totalRating,
     photo,
     specialization,
     experiences
   }=doctor;
-  
+  // console.log(doctor)
   return (
     <div className='p-3 lg:p-5'> 
       <div>
@@ -27,11 +27,12 @@ const DoctorsCard = ({doctor}) => {
        
         <div className="flex items-center gap-[6px]">
           <span className="flex items-center gap-[6px] text-[14px] leading-6 lg:text-[16px]
-          leading-7 font-semibold text-headingColor">
-            <img src={starIcon} alt="" />{avgRating}
+          font-semibold text-headingColor">
+            <img src={starIcon} alt="" />{Math.round(averageRating)}
+            
           </span>
           <span className='text-[14px] leading-6 lg:text-[16px] lg:leading-7 font-[400] text-textColor'>
-            ({totalRating})
+            ({Math.round(totalRating)})
           </span>
         </div>
       </div>

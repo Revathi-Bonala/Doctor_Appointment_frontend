@@ -3,6 +3,7 @@ import logo from '../../assets/images/logo.png'
 import { NavLink,Link } from 'react-router-dom'
 import {BiMenu} from "react-icons/bi"
 import {  authContext } from '../../context/AuthContext.jsx'
+import profile from '../../assets/images/Pictures/prof1.jpg'
 const navLinks=[
   {
     path:'/home',
@@ -70,7 +71,7 @@ const Header = () => {
       token && user ? (  <div >
       <Link to={`${role === 'doctor' ? '/doctors/profile/me' : '/users/profile/me'}`}>
         <figure className="w-[45px] h-[45px] rounded-full cursor-pointer ml-[20px]" >
-           <img src={user?.photo} 
+           <img src={user.photo?user.photo:profile} 
             className="w-full rounded-full " alt="" />
         </figure>
        

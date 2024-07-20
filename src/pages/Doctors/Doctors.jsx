@@ -55,7 +55,7 @@ const Doctors = () => {
             <p className='text_para text-center'> World-class care for everyone,Our health System offers unmatched,expert health care</p>
           </div>
           <Testimonial/>
-                 </div>
+          </div>
      </section>
   
   </>

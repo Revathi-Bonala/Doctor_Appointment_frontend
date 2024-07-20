@@ -45,21 +45,14 @@ const quickLinks01=[
 ];
 const quickLinks02=[
   {
-    path:'/find-a-dotor',
+    path:'/doctors',
     display:"Find a Doctor",
   },
   {
-    path:'/',
+    path:'/doctors',
     display:'Request an Appointment',
   },
-  {
-    path:"/",
-    display:'Find a Location',
-  },
-  {
-    path:'/',
-    display:'Get a Opinion',
-  }
+ 
 ];
 const quickLinks03=[
   {
@@ -74,6 +67,12 @@ const quickLinks03=[
 
 const Footer = () => {
   const year=new Date().getFullYear();
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
   return (
     <footer className='pb-16 pt-10'>
       <div className="conatiner mx-10">
@@ -99,7 +98,7 @@ const Footer = () => {
           </h2>
           <ul>
             {quickLinks01.map((item,index)=>(<li key={index} className='mb-4'>
-                <Link to={item.path} > {item.display}</Link></li>
+                <Link to={item.path} onClick={scrollToTop}> {item.display}</Link></li>
                 ))}
           </ul>
         </div>
@@ -108,7 +107,7 @@ const Footer = () => {
           </h2>
           <ul>
             {quickLinks02.map((item,index)=>(<li key={index} className='mb-4'>
-                <Link to={item.path} > {item.display}</Link></li>
+                <Link to={item.path} onClick={scrollToTop}> {item.display}</Link></li>
                 ))}
           </ul>
         </div>
@@ -117,7 +116,7 @@ const Footer = () => {
           </h2>
           <ul>
             {quickLinks03.map((item,index)=>(<li key={index} className='mb-4'>
-                <Link to={item.path} > {item.display}</Link></li>
+                <Link to={item.path} onClick={scrollToTop}> {item.display}</Link></li>
                 ))}
           </ul>
         </div>
