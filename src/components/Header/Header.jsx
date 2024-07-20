@@ -21,6 +21,9 @@ const navLinks=[
     path:'/contact',
     display:'Contact'
   },
+  {
+
+  },
 ]
 const Header = () => {
   const headerRef=useRef(null)
