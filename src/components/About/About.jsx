@@ -18,7 +18,7 @@ const About = () => {
         <p className='text_para'>For 30 years in a row,U.S. News & world Report has recognized us
         as one of the best publics hospitals in the Nation and #1 in Texas.</p>
         <p className='text_para'>Our best is Something we strive for each day,caring for our patients-not 
-        looking back at what we accomplished but towards what we can do tommorrow.Providing the best.</p>
+        looking back at what we accomplished but towards what we can do tommorrow.</p>
         <Link to='/'><button className="btn">Learn More</button></Link>
     </div>
     </div>
